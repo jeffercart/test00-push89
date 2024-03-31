@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/test00-push89/static/css/main.8326262f.css",
+    "main.js": "/test00-push89/static/js/main.fb95bd67.js",
+    "static/media/RubikGlitch-Regular.ttf": "/test00-push89/static/media/RubikGlitch-Regular.c45582ca18588f33422e.ttf",
+    "index.html": "/test00-push89/index.html",
+    "main.8326262f.css.map": "/test00-push89/static/css/main.8326262f.css.map",
+    "main.fb95bd67.js.map": "/test00-push89/static/js/main.fb95bd67.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8326262f.css",
+    "static/js/main.fb95bd67.js"
+  ]
+}
