@@ -1,0 +1,115 @@
+.Menu {
+    width: 100%;
+    background-color: black;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier new';
+
+    color: whitesmoke;
+}
+
+.Menu-button {
+    display: flex;
+    cursor: pointer;
+}
+
+.Menu-svg {
+    width: 2em;
+    height: 2em;
+    fill: whitesmoke;
+}
+
+.Menu-nav {
+    width:100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 0vh;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.Menu-nav.isActive {
+    height: 5vh;
+    opacity: 1;
+}
+
+.Menu-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    /*align-items: center;*/
+}
+
+.Menu-li {
+    margin: 0 2em;
+}
+
+@media screen and (max-width< 480px) { 
+    .Menu-button {
+        display:flex;
+    }
+
+    .Menu-nav {
+        width:100%;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+    .Menu-nav.isActive {
+        height: 16vh;
+        opacity: 1;
+    }
+
+    .Menu-ul {
+        flex-direction: column;
+    }
+
+    .Menu-li {
+        margin: 0.5 em 0;
+    }
+}
+
+@media screen and (max-width: 360px) { 
+    .Menu-button {
+        display:flex;
+    }
+
+    .Menu-nav {
+        width:100%;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 0vh;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .5s ease;
+    }
+    .Menu-nav.isActive {
+        height: 16vh;
+        opacity: 1;
+    }
+
+    .Menu-ul {
+        flex-direction: column;
+    }
+
+    .Menu-li {
+        margin: 0.5 em 0;
+    }
+}

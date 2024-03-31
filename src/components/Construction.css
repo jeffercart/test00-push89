@@ -1,0 +1,36 @@
+/* Construction.css */
+@font-face {
+    font-family: 'Rubik Glitch';
+    src: url('./font/RubikGlitch-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .construction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh; /* Ocupa el 100% del alto de la pantalla */
+    cursor: pointer;
+  }
+  
+  .construction-text {
+    font-family: 'Rubik Glitch', sans-serif; 
+    font-size: 25px;
+    color: #b9b9b9;
+  }
+
+  @media screen and (max-width< 480px) { 
+    .construction-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh; /* Ocupa el 100% del alto de la pantalla */
+    cursor: pointer;
+    }
+    .construction-text {
+      font-family: 'Rubik Glitch', sans-serif; 
+      font-size: 15px;
+      color: #b9b9b9;
+    }
+ }

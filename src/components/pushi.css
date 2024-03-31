@@ -1,0 +1,14 @@
+.pushi-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  margin: 0 auto; /* Centra horizontalmente el componente */
+}
+
+.pushi-container canvas {
+  max-width: 100%; /* Asegura que el lienzo no se desborde en pantallas pequeñas */
+  max-height: 100%; /* Asegura que el lienzo no se desborde en pantallas pequeñas */
+}
+
+
