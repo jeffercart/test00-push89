@@ -2,18 +2,20 @@ import React, { useState } from 'react';
 import './Construction.css'; 
 
 const Construction = () => {
-  const [texto, setTexto] = useState("UNDER CONSTRUCTION");
+  const textos = ["under construction", "en construcción","em construção", "en cours de construction", "in costruzione", "im Aufbau"];
+  const [indice, setIndice] = useState(0);
 
   const handleClick = () => {
-
-    setTexto(texto === "UNDER CONSTRUCTION" ? "EN CONSTRUCCION" : "UNDER CONSTRUCTION");
+    setIndice((indice + 1) % textos.length); // Cambiar al siguiente texto en el array
   };
 
   return (
     <div className="construction-container" onClick={handleClick}>
-      <span className="construction-text">{texto}</span>
+      <p className="construction-text">{ textos[indice] }</p>
+      <p className="construction-scroll">↑↓</p>
     </div>
   );
 };
 
 export default Construction;
+

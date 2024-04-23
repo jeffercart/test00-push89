@@ -11,4 +11,11 @@
   max-height: 100%; /* Asegura que el lienzo no se desborde en pantallas pequeñas */
 }
 
+@media screen and (max-height: 480px) {
+  .pushi-container {
+    width: 30vw; /* Ancho al 100% del ancho de la ventana en pantallas grandes */
+    height: 20vh; /* Alto al 100% del alto de la ventana en pantallas grandes */
+  }
+}
+
 

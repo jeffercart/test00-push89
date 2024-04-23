@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import p5 from 'p5';
 import './pushi.css';
-
+import SerifFon from './font/SourceSerif.ttf';
 
 const Pushi = () => {
   const xRef = useRef(0);
@@ -13,10 +13,16 @@ const Pushi = () => {
 
   useEffect(() => {
     const sketch = new p5(p => {
+      let miFuente; // Variable para almacenar la fuente cargada
+
+      p.preload = () => {
+        // Carga la fuente
+        miFuente = p.loadFont(SerifFon);
+      };
       p.setup = () => {
         p.createCanvas(480, 160);
-        p.textSize(42);
-        p.textFont("Inconsolata");
+        p.textSize(40);
+        p.textFont(miFuente);
         p.textStyle(p.BOLD);
       };
 
@@ -24,7 +30,7 @@ const Pushi = () => {
         p.background(0);
 
         p.push();
-        p.translate(110, 0);
+        p.translate(120, 0);
         movVerticalCambio(p, 1, 4, 80, p.height / 4);
         if (bRef.current < p.height / 6) {
           p.text(")", p.width / 2, p.height / 2);
@@ -35,7 +41,7 @@ const Pushi = () => {
         p.pop();
 
         p.push();
-        p.translate(70, 0);
+        p.translate(80, 0);
         movVerticalCambio(p, 1, 4.05, 80, p.height / 4);
         if (bRef.current < p.height / 6) {
           p.text("(", p.width / 2, p.height / 2);
@@ -46,7 +52,7 @@ const Pushi = () => {
         p.pop();
 
         p.push();
-        p.translate(30, 0);
+        p.translate(40, 0);
         movVerticalCambio(p, 1, 4.1, 80, p.height / 4);
         p.text("h", p.width / 2, p.height / 2);
         p.pop();

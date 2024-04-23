@@ -7,7 +7,7 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Courier new';
+    font-family: 'Courier new', sans-serif;
 
     color: whitesmoke;
 }
@@ -83,7 +83,7 @@
     }
 }
 
-@media screen and (max-width: 360px) { 
+@media screen and (max-width: 460px) { 
     .Menu-button {
         display:flex;
     }

@@ -1,27 +1,8 @@
 .footer-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    cursor: pointer;
-  }
-  
-  .footer-container.animating {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    cursor: pointer;
-  }
-
-  @media screen and (max-width< 768px) {
-    .footer-container {
-      height: 15vh; 
-    }
-  }
-  
-  @media screen and (max-width< 480px) {
-    .footer-container {
-      height: 10vh; 
-    }
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  z-index: -999; /* Asegúrate de que esté por encima de otros elementos */
+}
