@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dev.push89/build/static/css/main.a3425c4c.css",
-    "main.js": "/dev.push89/build/static/js/main.6c2f7c9d.js",
-    "static/media/SourceSerif.ttf": "/dev.push89/build/static/media/SourceSerif.b56650a097ebbfa81a91.ttf",
-    "index.html": "/dev.push89/build/index.html",
-    "main.a3425c4c.css.map": "/dev.push89/build/static/css/main.a3425c4c.css.map",
-    "main.6c2f7c9d.js.map": "/dev.push89/build/static/js/main.6c2f7c9d.js.map"
+    "main.css": "/dev-push89/build/static/css/main.a3425c4c.css",
+    "main.js": "/dev-push89/build/static/js/main.598fac07.js",
+    "static/media/SourceSerif.ttf": "/dev-push89/build/static/media/SourceSerif.b56650a097ebbfa81a91.ttf",
+    "index.html": "/dev-push89/build/index.html",
+    "main.a3425c4c.css.map": "/dev-push89/build/static/css/main.a3425c4c.css.map",
+    "main.598fac07.js.map": "/dev-push89/build/static/js/main.598fac07.js.map"
   },
   "entrypoints": [
     "static/css/main.a3425c4c.css",
-    "static/js/main.6c2f7c9d.js"
+    "static/js/main.598fac07.js"
   ]
 }
